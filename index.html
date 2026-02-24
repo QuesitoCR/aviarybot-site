@@ -46,7 +46,15 @@ body{
 
 h1{
   font-size:2.2rem;
-  margin-bottom:10px;
+  margin-bottom:6px;
+}
+
+.divider{
+  margin-top:6px;
+  margin-bottom:14px;
+  font-size:1rem;
+  opacity:.75;
+  letter-spacing:1px;
 }
 
 .tagline{
@@ -90,7 +98,7 @@ h1{
   text-decoration:underline;
 }
 
-/* Sección Jai */
+/* Jai */
 
 .jai{
   margin-top:28px;
@@ -103,7 +111,6 @@ h1{
 .jai h2{
   font-size:1.1rem;
   margin-bottom:12px;
-  color:var(--text);
 }
 
 .twitch{
@@ -160,11 +167,11 @@ h1{
 
 <body>
 <main class="container">
-  
+
 <h1>AviaryBOT</h1>
 
 <div class="divider">
-  ─── ʚɞ ── 🐦 ── ʚɞ ───
+─── ʚɞ ── 🐦 ── ʚɞ ───
 </div>
 
 <div class="tagline">
@@ -189,8 +196,6 @@ Diseñado para automatizar, moderar y mejorar la experiencia del servidor con fu
   <a class="pill" href="https://unstudiomax.carrd.co/" target="_blank">Contacto</a>
 </div>
 
-<!-- Sección Jai Aviary -->
-
 <div class="jai">
   <h2>💜 Apoya a Jai Aviary ⋋(•⌔•)⋌ 💜</h2>
 
@@ -208,13 +213,15 @@ Diseñado para automatizar, moderar y mejorar la experiencia del servidor con fu
 
 <div class="footer">
   Creado por xMax • ~unstudiomax~<br>
-  <span style="opacity:.85">Última actualización: 17 febrero 2026</span>
+  <span style="opacity:.85">Última actualización: <span class="bot-update"></span></span>
   <div class="kaomoji">(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</div>
   <div class="copyright">© 2026 xMax — AviaryBOT</div>
 </div>
 
 </main>
+
+<!-- Carga fecha desde version.json -->
+<script src="./version.js"></script>
+
 </body>
 </html>
-
-
