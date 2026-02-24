@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AviaryBOT — Comandos</title>
+
+<style>
+:root{
+  --bg0:#0b0d12;
+  --bg1:#1c1f26;
+  --card:rgba(255,255,255,.04);
+  --card2:rgba(255,255,255,.06);
+  --text:#eaeaf0;
+  --muted:#cfcfe6;
+  --sub:#9aa0ff;
+  --line:rgba(255,255,255,.10);
+}
+
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui}
+
+body{
+  background:radial-gradient(circle at top,var(--bg1),var(--bg0));
+  color:var(--text);
+  padding:24px;
+}
+
+.wrap{max-width:900px;margin:auto}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:28px;
+}
+
+h1{margin-bottom:10px}
+h2{margin-top:24px}
+
+.section{
+  background:var(--card2);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
+  margin-top:10px;
+}
+
+code{background:#0006;padding:2px 6px;border-radius:6px}
+
+a{color:var(--sub);text-decoration:none}
+
+.nav{margin-bottom:18px}
+.nav a{margin-right:12px}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+<div class="card">
+
+<div class="nav">
+<a href="./index.html">Inicio</a>
+<a href="./terms.html">Términos</a>
+<a href="./privacy.html">Privacidad</a>
+</div>
+
+<h1>AviaryBOT — Lista de comandos</h1>
+<p>Versión actual: <strong>v2.2.7</strong></p>
+
+<h2>🧰 Utilidad</h2>
+<div class="section">
+<code>$dice &lt;texto&gt;</code><br>
+El bot dice tu mensaje.<br><br>
+
+<code>$comandos</code> / <code>/comandos</code><br>
+Muestra este menú.
+</div>
+
+<h2>🛡️ Moderación</h2>
+<div class="section">
+<code>$delete &lt;numero&gt;</code> / <code>/delete</code><br>
+Borra mensajes.
+</div>
+
+<h2>🐦 Notificaciones Twitter/X</h2>
+<div class="section">
+<code>$xadd &lt;usuario&gt; &lt;#canal&gt; [@rol] [texto]</code> / <code>/xadd</code><br><br>
+
+<code>$xedit &lt;usuario&gt; &lt;#canal|-&gt; &lt;@rol|none&gt; &lt;texto|-&gt;</code> / <code>/xedit</code><br><br>
+
+<code>$xremove &lt;usuario&gt;</code> / <code>/xremove</code><br><br>
+
+<code>$xlist</code> / <code>/xlist</code><br><br>
+
+<code>$xconfig [@rol] [texto]</code> / <code>/xconfig</code>
+</div>
+
+<h2>📸 Notificaciones Instagram</h2>
+<div class="section">
+<p>Los comandos de Instagram son exactamente los mismos que Twitter/X, usando <strong>ig</strong>:</p>
+
+<code>$igadd</code> / <code>/igadd</code><br>
+<code>$igedit</code> / <code>/igedit</code><br>
+<code>$igremove</code> / <code>/igremove</code><br>
+<code>$iglist</code> / <code>/iglist</code><br>
+<code>$igconfig</code> / <code>/igconfig</code>
+</div>
+
+</div>
+</div>
+</body>
+</html>
