@@ -79,7 +79,7 @@ a{
   margin-right:12px;
 }
 
-/* Footer unificado (igual idea que index) */
+/* Footer unificado */
 .footer{
   margin-top:18px;
   text-align:center;
@@ -113,7 +113,7 @@ a{
 </div>
 
 <h1>AviaryBOT — Lista de comandos</h1>
-<p>Versión actual: <strong>v2.2.7</strong></p>
+<p>Versión actual: <strong class="bot-version"></strong></p>
 
 <h2>🧰 Utilidad</h2>
 <div class="section">
@@ -168,12 +168,16 @@ Configuración global de notificaciones de Instagram (rol por defecto y/o texto 
 
 <div class="footer">
   Creado por xMax • ~unstudiomax~<br />
-  <span style="opacity:.85">Última actualización: 17 febrero 2026</span>
+  <span style="opacity:.85">Última actualización: <span class="bot-update"></span></span>
   <div class="kaomoji">(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</div>
   <div class="copyright">© 2026 xMax — AviaryBOT</div>
 </div>
 
 </div>
 </div>
+
+<!-- Carga versión y fecha desde version.json -->
+<script src="./version.js"></script>
+
 </body>
 </html>
