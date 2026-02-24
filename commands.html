@@ -78,26 +78,45 @@ Muestra este menú.
 
 <h2>🛡️ Moderación</h2>
 <div class="section">
-<code>$delete &lt;numero&gt;</code> / <code>/delete</code><br>
-Borra mensajes.
+  <code>$delete &lt;numero&gt;</code> / <code>/delete &lt;numero&gt;</code><br>
+  Borra la cantidad de mensajes que indiques en el canal (solo si tienes permisos).
 </div>
 
 <h2>🐦 Notificaciones Twitter/X</h2>
 <div class="section">
-<code>$xadd &lt;usuario&gt; &lt;#canal&gt; [@rol] [texto]</code> / <code>/xadd</code><br><br>
+  <code>$xadd &lt;usuario&gt; &lt;#canal&gt; [@rol] [texto]</code> / <code>/xadd</code><br>
+  Agrega un usuario de X para enviar notificaciones en un canal (opcional: mencionar rol y/o añadir texto).<br><br>
 
-<code>$xedit &lt;usuario&gt; &lt;#canal|-&gt; &lt;@rol|none&gt; &lt;texto|-&gt;</code> / <code>/xedit</code><br><br>
+  <code>$xedit &lt;usuario&gt; &lt;#canal|-&gt; &lt;@rol|none&gt; &lt;texto|-&gt;</code> / <code>/xedit</code><br>
+  Edita la configuración de notificaciones de un usuario (cambia canal, rol o texto; usa <code>-</code> para no cambiar).<br><br>
 
-<code>$xremove &lt;usuario&gt;</code> / <code>/xremove</code><br><br>
+  <code>$xremove &lt;usuario&gt;</code> / <code>/xremove</code><br>
+  Elimina las notificaciones de un usuario de X.<br><br>
 
-<code>$xlist</code> / <code>/xlist</code><br><br>
+  <code>$xlist</code> / <code>/xlist</code><br>
+  Muestra la lista de usuarios configurados para notificaciones de X.<br><br>
 
-<code>$xconfig [@rol] [texto]</code> / <code>/xconfig</code>
+  <code>$xconfig [@rol] [texto]</code> / <code>/xconfig</code><br>
+  Configuración global de notificaciones de X (rol por defecto y/o texto por defecto).
 </div>
 
 <h2>📸 Notificaciones Instagram</h2>
 <div class="section">
-<p>Los comandos de Instagram son exactamente los mismos que Twitter/X, usando <strong>ig</strong>:</p>
+  <code>$igadd &lt;usuario&gt; &lt;#canal&gt; [@rol] [texto]</code> / <code>/igadd</code><br>
+  Agrega un usuario de Instagram para enviar notificaciones en un canal (opcional: mencionar rol y/o añadir texto).<br><br>
+
+  <code>$igedit &lt;usuario&gt; &lt;#canal|-&gt; &lt;@rol|none&gt; &lt;texto|-&gt;</code> / <code>/igedit</code><br>
+  Edita la configuración de notificaciones de un usuario (cambia canal, rol o texto; usa <code>-</code> para no cambiar).<br><br>
+
+  <code>$igremove &lt;usuario&gt;</code> / <code>/igremove</code><br>
+  Elimina las notificaciones de un usuario de Instagram.<br><br>
+
+  <code>$iglist</code> / <code>/iglist</code><br>
+  Muestra la lista de usuarios configurados para notificaciones de Instagram.<br><br>
+
+  <code>$igconfig [@rol] [texto]</code> / <code>/igconfig</code><br>
+  Configuración global de notificaciones de Instagram (rol por defecto y/o texto por defecto).
+</div>
 
 <code>$igadd</code> / <code>/igadd</code><br>
 <code>$igedit</code> / <code>/igedit</code><br>
