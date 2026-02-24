@@ -17,7 +17,12 @@
   --line:rgba(255,255,255,.10);
 }
 
-*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:system-ui,sans-serif;
+}
 
 body{
   background:radial-gradient(circle at top,var(--bg1),var(--bg0));
@@ -25,7 +30,10 @@ body{
   padding:24px;
 }
 
-.wrap{max-width:900px;margin:auto}
+.wrap{
+  max-width:900px;
+  margin:auto;
+}
 
 .card{
   background:var(--card);
@@ -34,23 +42,42 @@ body{
   padding:28px;
 }
 
-h1{margin-bottom:10px}
-h2{margin-top:24px}
+h1{
+  margin-bottom:6px;
+}
+
+h2{
+  margin-top:28px;
+  margin-bottom:8px;
+}
 
 .section{
   background:var(--card2);
   border:1px solid var(--line);
   border-radius:14px;
-  padding:14px;
+  padding:16px;
   margin-top:10px;
+  line-height:1.55;
 }
 
-code{background:#0006;padding:2px 6px;border-radius:6px}
+code{
+  background:#0006;
+  padding:2px 6px;
+  border-radius:6px;
+}
 
-a{color:var(--sub);text-decoration:none}
+a{
+  color:var(--sub);
+  text-decoration:none;
+}
 
-.nav{margin-bottom:18px}
-.nav a{margin-right:12px}
+.nav{
+  margin-bottom:18px;
+}
+
+.nav a{
+  margin-right:12px;
+}
 </style>
 </head>
 
@@ -78,51 +105,44 @@ Muestra este menú.
 
 <h2>🛡️ Moderación</h2>
 <div class="section">
-  <code>$delete &lt;numero&gt;</code> / <code>/delete &lt;numero&gt;</code><br>
-  Borra la cantidad de mensajes que indiques en el canal (solo si tienes permisos).
+<code>$delete &lt;numero&gt;</code> / <code>/delete &lt;numero&gt;</code><br>
+Borra la cantidad de mensajes que indiques en el canal (solo si tienes permisos).
 </div>
 
 <h2>🐦 Notificaciones Twitter/X</h2>
 <div class="section">
-  <code>$xadd &lt;usuario&gt; &lt;#canal&gt; [@rol] [texto]</code> / <code>/xadd</code><br>
-  Agrega un usuario de X para enviar notificaciones en un canal (opcional: mencionar rol y/o añadir texto).<br><br>
+<code>$xadd &lt;usuario&gt; &lt;#canal&gt; [@rol] [texto]</code> / <code>/xadd</code><br>
+Agrega un usuario de X para enviar notificaciones en un canal (opcional: mencionar rol y/o añadir texto).<br><br>
 
-  <code>$xedit &lt;usuario&gt; &lt;#canal|-&gt; &lt;@rol|none&gt; &lt;texto|-&gt;</code> / <code>/xedit</code><br>
-  Edita la configuración de notificaciones de un usuario (cambia canal, rol o texto; usa <code>-</code> para no cambiar).<br><br>
+<code>$xedit &lt;usuario&gt; &lt;#canal|-&gt; &lt;@rol|none&gt; &lt;texto|-&gt;</code> / <code>/xedit</code><br>
+Edita la configuración de notificaciones de un usuario (cambia canal, rol o texto; usa <code>-</code> para no cambiar).<br><br>
 
-  <code>$xremove &lt;usuario&gt;</code> / <code>/xremove</code><br>
-  Elimina las notificaciones de un usuario de X.<br><br>
+<code>$xremove &lt;usuario&gt;</code> / <code>/xremove</code><br>
+Elimina las notificaciones de un usuario de X.<br><br>
 
-  <code>$xlist</code> / <code>/xlist</code><br>
-  Muestra la lista de usuarios configurados para notificaciones de X.<br><br>
+<code>$xlist</code> / <code>/xlist</code><br>
+Muestra la lista de usuarios configurados para notificaciones de X.<br><br>
 
-  <code>$xconfig [@rol] [texto]</code> / <code>/xconfig</code><br>
-  Configuración global de notificaciones de X (rol por defecto y/o texto por defecto).
+<code>$xconfig [@rol] [texto]</code> / <code>/xconfig</code><br>
+Configuración global de notificaciones de X (rol por defecto y/o texto por defecto).
 </div>
 
 <h2>📸 Notificaciones Instagram</h2>
 <div class="section">
-  <code>$igadd &lt;usuario&gt; &lt;#canal&gt; [@rol] [texto]</code> / <code>/igadd</code><br>
-  Agrega un usuario de Instagram para enviar notificaciones en un canal (opcional: mencionar rol y/o añadir texto).<br><br>
+<code>$igadd &lt;usuario&gt; &lt;#canal&gt; [@rol] [texto]</code> / <code>/igadd</code><br>
+Agrega un usuario de Instagram para enviar notificaciones en un canal (opcional: mencionar rol y/o añadir texto).<br><br>
 
-  <code>$igedit &lt;usuario&gt; &lt;#canal|-&gt; &lt;@rol|none&gt; &lt;texto|-&gt;</code> / <code>/igedit</code><br>
-  Edita la configuración de notificaciones de un usuario (cambia canal, rol o texto; usa <code>-</code> para no cambiar).<br><br>
+<code>$igedit &lt;usuario&gt; &lt;#canal|-&gt; &lt;@rol|none&gt; &lt;texto|-&gt;</code> / <code>/igedit</code><br>
+Edita la configuración de notificaciones de un usuario (cambia canal, rol o texto; usa <code>-</code> para no cambiar).<br><br>
 
-  <code>$igremove &lt;usuario&gt;</code> / <code>/igremove</code><br>
-  Elimina las notificaciones de un usuario de Instagram.<br><br>
+<code>$igremove &lt;usuario&gt;</code> / <code>/igremove</code><br>
+Elimina las notificaciones de un usuario de Instagram.<br><br>
 
-  <code>$iglist</code> / <code>/iglist</code><br>
-  Muestra la lista de usuarios configurados para notificaciones de Instagram.<br><br>
-
-  <code>$igconfig [@rol] [texto]</code> / <code>/igconfig</code><br>
-  Configuración global de notificaciones de Instagram (rol por defecto y/o texto por defecto).
-</div>
-
-<code>$igadd</code> / <code>/igadd</code><br>
-<code>$igedit</code> / <code>/igedit</code><br>
-<code>$igremove</code> / <code>/igremove</code><br>
 <code>$iglist</code> / <code>/iglist</code><br>
-<code>$igconfig</code> / <code>/igconfig</code>
+Muestra la lista de usuarios configurados para notificaciones de Instagram.<br><br>
+
+<code>$igconfig [@rol] [texto]</code> / <code>/igconfig</code><br>
+Configuración global de notificaciones de Instagram (rol por defecto y/o texto por defecto).
 </div>
 
 </div>
