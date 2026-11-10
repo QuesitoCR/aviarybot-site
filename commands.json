@@ -1,0 +1,248 @@
+{
+  "bot": "AviaryBOT",
+  "version": "v3.2.0",
+  "prefix": "$",
+  "categories": [
+    {
+      "key": "utilidad",
+      "title": "Utilidad",
+      "emoji": "🧰",
+      "description": "",
+      "commands": [
+        {
+          "name": "comandos",
+          "usage": "$comandos",
+          "slash": true,
+          "description": "Muestra el menú de comandos",
+          "permission": "todos",
+          "permission_text": "Todos"
+        },
+        {
+          "name": "dice",
+          "usage": "$dice <texto>",
+          "slash": false,
+          "description": "El bot repite tu mensaje en el canal. Queda registrado quién lo usó.",
+          "permission": "todos",
+          "permission_text": "Todos"
+        }
+      ]
+    },
+    {
+      "key": "moderacion",
+      "title": "Moderación",
+      "emoji": "🛡️",
+      "description": "",
+      "commands": [
+        {
+          "name": "delete",
+          "usage": "$delete <cantidad 1-100>",
+          "slash": true,
+          "description": "Borra mensajes del canal (máximo 100)",
+          "permission": "mod",
+          "permission_text": "Administradores y mods de Discord"
+        },
+        {
+          "name": "logs",
+          "usage": "$logs",
+          "slash": true,
+          "description": "Configura el canal de logs del servidor",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        }
+      ]
+    },
+    {
+      "key": "x",
+      "title": "Notificaciones Twitter/X",
+      "emoji": "🐦",
+      "description": "Avisos de nuevas publicaciones de cuentas de X.",
+      "commands": [
+        {
+          "name": "xadd",
+          "usage": "$xadd <usuario> <#canal> [@rol] [texto]",
+          "slash": true,
+          "description": "Agrega notificaciones de Twitter/X para un usuario",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "xedit",
+          "usage": "$xedit [usuario]",
+          "slash": true,
+          "description": "Edita, prueba o elimina una suscripción de Twitter/X",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "xconfig",
+          "usage": "$xconfig [@rol] [texto]",
+          "slash": true,
+          "description": "Configura texto/rol global para Twitter/X",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "xremove",
+          "usage": "$xremove <usuario>",
+          "slash": true,
+          "description": "Quita notificaciones de Twitter/X para un usuario",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "xlist",
+          "usage": "$xlist",
+          "slash": true,
+          "description": "Muestra y administra las suscripciones de Twitter/X",
+          "permission": "todos",
+          "permission_text": "Todos"
+        },
+        {
+          "name": "xtest",
+          "usage": "$xtest [usuario]",
+          "slash": true,
+          "description": "Envía una notificación de prueba de Twitter/X al canal asignado",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        }
+      ]
+    },
+    {
+      "key": "ig",
+      "title": "Notificaciones Instagram",
+      "emoji": "📸",
+      "description": "Avisos de nuevas publicaciones de cuentas de Instagram.",
+      "commands": [
+        {
+          "name": "igadd",
+          "usage": "$igadd <usuario> <#canal> [@rol] [texto]",
+          "slash": true,
+          "description": "Agrega notificaciones de Instagram para un usuario",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "igedit",
+          "usage": "$igedit [usuario]",
+          "slash": true,
+          "description": "Edita, prueba o elimina una suscripción de Instagram",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "igconfig",
+          "usage": "$igconfig [@rol] [texto]",
+          "slash": true,
+          "description": "Configura texto/rol global para Instagram",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "igremove",
+          "usage": "$igremove <usuario>",
+          "slash": true,
+          "description": "Quita notificaciones de Instagram para un usuario",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "iglist",
+          "usage": "$iglist",
+          "slash": true,
+          "description": "Muestra y administra las suscripciones de Instagram",
+          "permission": "todos",
+          "permission_text": "Todos"
+        },
+        {
+          "name": "igtest",
+          "usage": "$igtest [usuario]",
+          "slash": true,
+          "description": "Envía una notificación de prueba de Instagram al canal asignado",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        }
+      ]
+    },
+    {
+      "key": "yt",
+      "title": "Notificaciones YouTube",
+      "emoji": "▶️",
+      "description": "Avisos de videos, Shorts y directos de canales de YouTube.",
+      "commands": [
+        {
+          "name": "ytadd",
+          "usage": "$ytadd <canal_yt> <#canal> [@rol] [texto]",
+          "slash": true,
+          "description": "Agrega notificaciones de YouTube para un canal",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "ytedit",
+          "usage": "$ytedit [canal_yt]",
+          "slash": true,
+          "description": "Edita, prueba o elimina una suscripción de YouTube",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "ytconfig",
+          "usage": "$ytconfig [@rol] [texto]",
+          "slash": true,
+          "description": "Configura texto/rol global para YouTube",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "ytremove",
+          "usage": "$ytremove <canal_yt>",
+          "slash": true,
+          "description": "Quita notificaciones de YouTube para un canal",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "ytlist",
+          "usage": "$ytlist",
+          "slash": true,
+          "description": "Muestra y administra las suscripciones de YouTube",
+          "permission": "todos",
+          "permission_text": "Todos"
+        },
+        {
+          "name": "yttest",
+          "usage": "$yttest [canal_yt]",
+          "slash": true,
+          "description": "Envía una notificación de prueba de YouTube al canal asignado",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        }
+      ]
+    },
+    {
+      "key": "twitch",
+      "title": "Clips de Twitch",
+      "emoji": "🎬",
+      "description": "Reenvía a Discord los clips que se comparten en el chat de Twitch.",
+      "commands": [
+        {
+          "name": "setclips",
+          "usage": "$setclips <canal_twitch> <#canal_discord>",
+          "slash": true,
+          "description": "Configura el canal de Twitch y Discord para reenviar clips",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        },
+        {
+          "name": "deleteclips",
+          "usage": "$deleteclips",
+          "slash": true,
+          "description": "Elimina la configuración de clips de Twitch para este servidor",
+          "permission": "admin",
+          "permission_text": "Solo Administradores"
+        }
+      ]
+    }
+  ],
+  "last_update": "9 de noviembre 2026"
+}

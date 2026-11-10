@@ -137,6 +137,9 @@ a{
         <li><strong>IDs de Discord</strong> (usuario, servidor, canal, mensaje) para identificar acciones y configuraciones.</li>
         <li><strong>Contenido de comandos</strong> (mensajes que contienen comandos) para ejecutar la acción solicitada.</li>
         <li><strong>Configuraciones del servidor</strong> relacionadas a funciones del Bot (canales, roles, ajustes).</li>
+        <li><strong>Mensajes dirigidos al Bot</strong> (cuando lo mencionas o respondes a uno de sus mensajes), para que pueda contestarte con IA.</li>
+        <li><strong>Uso del comando <code>$dice</code></strong>: quién lo usó, en qué canal y qué texto escribió. Queda registrado en el canal de logs que elijan los administradores del servidor y en el registro privado del creador del Bot.</li>
+        <li><strong>Avisos por mencionar a Jai</strong>: un contador por usuario, que vuelve a cero tras 30 días sin repetirse.</li>
       </ul>
 
       <h2>2. Lo que el Bot NO hace</h2>
@@ -159,11 +162,18 @@ a{
         Los datos se conservan solo el tiempo necesario para operar el Bot y mantener configuraciones.
         Cuando el Bot es removido de un servidor, las configuraciones asociadas pueden eliminarse dentro de un plazo razonable.
       </p>
+      <p>
+        El historial de conversación con la IA se guarda solo en memoria (los últimos mensajes de cada canal)
+        y se borra cada vez que el Bot se reinicia.
+      </p>
 
       <h2>5. Compartición de datos</h2>
       <p>Los datos no se comparten con terceros salvo:</p>
       <ul>
         <li>Proveedores técnicos necesarios para operar el Bot (por ejemplo, hosting), solo en la medida requerida.</li>
+        <li>Proveedores de IA (Groq y Google Gemini), que reciben el mensaje que le escribes al Bot, tu nombre visible y
+            un poco de contexto reciente del canal, solo para generar la respuesta.</li>
+        <li>GitHub, donde se guarda una copia de respaldo de las configuraciones del Bot.</li>
         <li>Requerimientos legales válidos, si aplicara.</li>
       </ul>
 
